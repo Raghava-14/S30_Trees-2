@@ -13,9 +13,11 @@
  *     }
  * }
  */
+//Time Complexity: O(n), number of nodes
+//Space Complexity: O(h), height of the tree
+
 class Solution {
     public int sumNumbers(TreeNode root) {
-        // call the dfs helper method to traverse the tree and compute the sum of all root-to-leaf paths
         return dfs(root, 0);
     }
     
